@@ -1,5 +1,6 @@
 const User = require('../src/User')
 const ScooterApp = require('../src/ScooterApp')
+const Scooter = require('../src/Scooter')
 
 const scooterApp = new ScooterApp()
 // ScooterApp tests here
@@ -10,6 +11,7 @@ describe('registerUser method tests', () => {
     const response = scooterApp.registerUser('Joe Bloggs', 'test123', 21)
     expect(response).toBeInstanceOf(User)
   })
+
 })
 
 // log in
